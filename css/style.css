@@ -1,0 +1,156 @@
+/* configuracion global */
+/* declarar unas constantes en colores y fuente */
+/* el root esla raiz de todo, para hacer las configuraciones repetitiva  */
+:root{
+    /* fuentes */
+    --titulos:'Lato', sans-serif;
+    --parrafo:'Roboto', sans-serif;
+    /* colores base */
+    --encabezado:rgb(121, 115, 62);
+    --pie:rgb(255, 255, 255);
+    --enlacesobre:rgb(139, 89, 65);
+}
+/* configuración global */
+/* declarar unas constantes en colores y fuente */
+/* el root es la raíz de todo, para hacer las configuraciones repetitivas */
+:root{
+    /* fuentes */
+    --titulos:'Lato', sans-serif;
+    --parrafo:'Roboto', sans-serif;
+    /* colores base */
+    --encabezado:rgb(81, 16, 16);
+    --pie:#000;
+    --enlace:#fff;
+    --enlaceSobre:#d1911a;
+}
+/* titulos */
+h1,h2,h3,h4,h5,h6{
+    /* fuente */
+    font-family: var(--titulos);
+    text-align: center;
+}
+/* evitar desbordamientos, el () es el selector universal/
+*{
+    box-sizing: border-box;
+}
+/* utilizar una selector de clase (.) y su nombre
+que hace referencia a una clase en el html*/
+.home-wrapper {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+header{
+    width: 100%;
+    /* posicion fija */
+    position: fixed;
+    background-color: var(--encabezado);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+header img{
+    width: 200px;
+}
+header nav{
+    float: right;
+    margin-top: 5px;
+}
+header nav a{
+    color: var(--enlace);
+    font-family: var(--parrafo);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 2px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: var(--enlaceSobre);  
+}
+.container {
+    width:  100%;
+    margin-left: auto;
+   margin-right: auto;
+}
+/* secsion home */
+/* identificaciion de css es (#)  */
+
+#home{
+    padding: 150px 0 260px;
+    text-align: center;
+}
+#home h1{
+    color: black;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 35px; 
+}
+#home p{
+    font-family: var(--parrafo);
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* seccion novedades */
+#novedades .box{
+    display: inline-block;
+    width: 33%;/*para dividir el ancho en tres*/ 
+    padding: 8px;
+}
+#novedades .box p{
+    text-align: justify;
+}
+#novedades .box img{
+    padding-left: 30%;
+    padding-bottom: 10px;
+}
+#novedades .box h3{
+    padding-top: 20px;
+}
+/* seccion categorias */
+section{
+    padding-top: 80px;
+}
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+}
+#categoria .box img{
+    width: 100%;
+}
+#categoria .box h3{
+    padding-top: 10px;
+}
+/* seccion contacto */
+#contacto {
+    width: 100%;
+    background-image: url('../images/map-image.png');
+    background-color: #000;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+}
+#contacto h2{
+    color: #fff;
+}
+/* lo que esta dentro de contacto que es input, select, textarea */
+#contacto input, select, textarea{
+    width: 600px;
+    padding: 10px 5px;
+    font-family: var(--parrafo);
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--pie);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
